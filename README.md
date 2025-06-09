@@ -116,9 +116,9 @@ python main.py
 
 ## 🔗 Resources
 
-- 📦 YOLOv11 Model: [Link to `best.pt` on Google Drive]([https://drive.google.com/file/d/XXXX/view](https://drive.google.com/file/d/1ZqyOaksKkVyzurosrP1DJa2M6E2rmBnn/view?usp=drive_link))
-- 🎥 Input Video: [Link to `15sec_input_720p.mp4`]([https://drive.google.com/file/d/YYYY/view](https://drive.google.com/file/d/1GYWks6NURX2nMBOH2RCNT1NKELHN2rZo/view?usp=drive_link))
-- 🎬 Output Video: [Output with tracking]([https://drive.google.com/file/d/ZZZZ/view](https://drive.google.com/file/d/15XSbG_dbblt5shyntvHEs_-CIxnqQmjw/view?usp=drive_link))
+- 📦 YOLOv11 Model: [Link to `best.pt` on Google Drive]((https://drive.google.com/file/d/1ZqyOaksKkVyzurosrP1DJa2M6E2rmBnn/view?usp=drive_link))
+- 🎥 Input Video: [Link to `15sec_input_720p.mp4`]((https://drive.google.com/file/d/1GYWks6NURX2nMBOH2RCNT1NKELHN2rZo/view?usp=drive_link))
+- 🎬 Output Video: [Output with tracking]((https://drive.google.com/file/d/15XSbG_dbblt5shyntvHEs_-CIxnqQmjw/view?usp=drive_link))
 
 ---
 
