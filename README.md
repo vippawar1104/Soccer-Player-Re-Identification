@@ -22,37 +22,44 @@ This project performs **player re-identification** in a soccer match video using
 ---
 
 ## 📦 Repository Structure
+
+```
 soccer-reid/
-├── main.py # Full code with tracking logic
-├── best.pt # YOLOv11 model (optional: link via Drive)
-├── 15sec_input_720p.mp4 # Input video (optional: link via Drive)
-├── output_with_tracking.mp4 # Output video (host via Drive)
-├── tracking_results.json # JSON of player detections and tracks
-├── requirements.txt # Python dependencies
-└── README.md # You're reading it!
+├── main.py                   # Full code with tracking logic
+├── best.pt                   # YOLOv11 model (optional: link via Drive)
+├── 15sec_input_720p.mp4      # Input video (optional: link via Drive)
+├── output_with_tracking.mp4  # Output video (host via Drive)
+├── tracking_results.json     # JSON of player detections and tracks
+├── requirements.txt          # Python dependencies
+└── README.md                 # You're reading it!
+```
 
 ---
 
 ## ⚙️ Setup Instructions
 
 ### 1. Clone the Repository
+
 ```bash
 git clone https://github.com/vippawar1104/soccer-reid.git
 cd soccer-reid
 ```
 
-### 2. Create Virtual Environment (optional but recommended)
+### 2. Create a Virtual Environment (Optional)
+
 ```bash
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+source venv/bin/activate        # On Windows: venv\Scripts\activate
 ```
 
 ### 3. Install Dependencies
+
 ```bash
 pip install -r requirements.txt
 ```
 
-Or manually install:
+**Or install manually:**
+
 ```bash
 pip install ultralytics opencv-python-headless numpy matplotlib torch torchvision scipy scikit-learn
 ```
@@ -61,55 +68,58 @@ pip install ultralytics opencv-python-headless numpy matplotlib torch torchvisio
 
 ## ▶️ How to Run
 
-### Local Script (main.py)
+### Option 1: Local Script (`main.py`)
+
 1. Place `best.pt` and `15sec_input_720p.mp4` in the project folder.
 2. Run:
+
 ```bash
 python main.py
 ```
 
-### Google Colab (Recommended for Easy Testing)
-1. Open the Colab notebook (upload main.py content).
+### Option 2: Google Colab (Recommended for Easy Testing)
+
+1. Open a Colab notebook and paste the code from `main.py`.
 2. Upload `best.pt` and `15sec_input_720p.mp4` when prompted.
-3. Output will auto-download (`output_with_tracking.mp4` + `tracking_results.json`).
+3. Output files (`output_with_tracking.mp4`, `tracking_results.json`) will download automatically.
 
 ---
 
 ## 📊 Output Files
 
-| File | Description |
-|------|-------------|
-| `output_with_tracking.mp4` | Video with annotated player IDs |
-| `tracking_results.json` | Frame-by-frame re-ID tracking data |
+| File                      | Description                                |
+|---------------------------|--------------------------------------------|
+| `output_with_tracking.mp4` | Annotated video with consistent player IDs |
+| `tracking_results.json`   | Frame-wise re-ID tracking results          |
 
 ---
 
 ## 📘 How It Works
 
 - **Detection**: YOLOv11 detects players in each frame.
-- **Feature Extraction**: Color histograms, texture, position features are computed.
-- **Tracking**: Matches players across frames based on feature similarity + spatial proximity.
-- **Re-Identification**: If a player disappears and returns, the tracker re-assigns the same ID based on appearance.
+- **Feature Extraction**: Color histograms, texture, and positional features.
+- **Tracking**: Players are matched frame-to-frame using similarity + IoU.
+- **Re-Identification**: Reappearance is handled by similarity scoring and ID assignment.
 
 ---
 
 ## 🧪 Evaluation Criteria Addressed
 
-| Criteria | Implementation |
-|----------|----------------|
-| ✔️ Accuracy & Re-ID Logic | Feature-based + IoU + distance matching |
-| ✔️ Simplicity & Modularity | Clean, modular code with docstrings |
-| ✔️ Documentation | This README + in-code comments |
-| ✔️ Runtime Efficiency | Frame-wise optimized tracking loop |
-| ✔️ Creativity | Custom tracker — no 3rd-party dependencies |
+| Criteria                    | Implementation Highlights                       |
+|-----------------------------|--------------------------------------------------|
+| ✔️ Accuracy & Re-ID Logic   | Feature-based + IoU + distance matching          |
+| ✔️ Simplicity & Modularity  | Clean code with reusable functions/classes       |
+| ✔️ Documentation            | Inline comments + this detailed README           |
+| ✔️ Runtime Efficiency       | Frame-optimized processing using NumPy           |
+| ✔️ Creativity               | Custom-built re-ID tracker (no external libs)    |
 
 ---
 
 ## 🔗 Resources
 
-- 📦 YOLOv11 Model: [Upload your best.pt to Drive and link here]
-- 🎥 Input Video: [Upload 15sec_input_720p.mp4 and link here]
-- 🎬 Output Video: [https://drive.google.com/file/d/XXXX/view]
+- 📦 YOLOv11 Model: [Link to `best.pt` on Google Drive](https://drive.google.com/file/d/XXXX/view)
+- 🎥 Input Video: [Link to `15sec_input_720p.mp4`](https://drive.google.com/file/d/YYYY/view)
+- 🎬 Output Video: [Output with tracking](https://drive.google.com/file/d/ZZZZ/view)
 
 ---
 
@@ -118,32 +128,25 @@ python main.py
 **Vipul Pawar**  
 📧 vipulpawar81077@gmail.com  
 🎓 B.Tech (ECE), IIIT Nagpur  
-🔗 [GitHub](https://github.com/vippawar1104) | [LinkedIn](https://linkedin.com/in/your-profile)
-
----
-
-### 📌 Final To-Do (Your Side)
-
-- [ ] Upload `output_with_tracking.mp4` to Google Drive  
-- [ ] Replace `https://drive.google.com/file/d/XXXX/view` in the README
-- [ ] Push all files (except big `.mp4`) to GitHub
+🔗 [GitHub](https://github.com/vippawar1104)  
+🔗 [LinkedIn](https://www.linkedin.com/in/vipul-pawar-1104vip)
 
 ---
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Contributions are welcome! Feel free to fork the repo and open a pull request.
 
 ---
 
 ## 📚 References
 
-- [YOLOv11 Paper](https://arxiv.org/abs/XXXX.XXXXX)
+- [Ultralytics YOLO](https://github.com/ultralytics/ultralytics)
 - [OpenCV Documentation](https://docs.opencv.org/)
-- [Ultralytics YOLO](https://github.com/ultralytics/yolov5)
+- [Re-Identification Concepts](https://arxiv.org/abs/1801.10352)
