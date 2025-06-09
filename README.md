@@ -40,7 +40,7 @@ soccer-reid/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/vippawar1104/soccer-reid.git
+git clone [https://github.com/vippawar1104/Soccer-Player-Re-Identification]
 cd soccer-reid
 ```
 
