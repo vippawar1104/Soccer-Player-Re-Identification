@@ -40,8 +40,8 @@ soccer-reid/
 ### 1. Clone the Repository
 
 ```bash
-git clone [https://github.com/vippawar1104/Soccer-Player-Re-Identification]
-cd soccer-reid
+git clone https://github.com/vippawar1104/Soccer-Player-Re-Identification.git
+cd Soccer-Player-Re-Identification
 ```
 
 ### 2. Create a Virtual Environment (Optional)
