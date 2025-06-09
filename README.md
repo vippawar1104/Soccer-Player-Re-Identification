@@ -1,4 +1,5 @@
-# ⚽ Soccer Player Re-Identification – YOLOv11 + Custom Tracker
+# Option -2 
+⚽ Soccer Player Re-Identification – YOLOv11 + Custom Tracker
 
 This project performs **player re-identification** in a soccer match video using **YOLOv11** for detection and a custom feature-based tracker. The tracker assigns **consistent player IDs**, even when players leave and re-enter the frame.
 
