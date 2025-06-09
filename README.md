@@ -6,7 +6,7 @@ This project performs **player re-identification** in a soccer match video using
 
 ## 🎥 Demo Output
 
-🔗 [Watch the Output Video]([https://drive.google.com/file/d/XXXX/view](https://drive.google.com/file/d/15XSbG_dbblt5shyntvHEs_-CIxnqQmjw/view?usp=drive_link))  
+🔗 [Watch the Output Video]((https://drive.google.com/file/d/15XSbG_dbblt5shyntvHEs_-CIxnqQmjw/view?usp=drive_link))  
 
 ---
 
